@@ -1,0 +1,26 @@
+﻿@model IEnumerable<ELearningMVC.Models.Subject>
+
+@{
+    ViewBag.Title = "Css";
+}
+
+    <h1> CSS </h1>
+    <p> Data Will be display from the Database</p>
+<div class="container">
+    <div class=row>
+        @foreach (var item in Model)
+        {
+            <div class="col-md-12">
+                <h1> @Html.DisplayFor(modelItem => item.Category)</h1>
+                <h2>
+                    @Html.DisplayFor(modelItem => item.Material)
+                </h2>
+
+            </div>
+
+        }
+
+
+    </div>
+
+</div>
